@@ -87,7 +87,7 @@ const SideNav = () => {
                     )}
                 >
                     <div className="side-nav-header">
-                        <Logo
+                        {/* <Logo
                             mode={logoMode()}
                             type={sideNavCollapse ? 'streamline' : 'full'}
                             className={
@@ -95,7 +95,8 @@ const SideNav = () => {
                                     ? SIDE_NAV_CONTENT_GUTTER
                                     : LOGO_X_GUTTER
                             }
-                        />
+                        /> */}
+                        <h3 className='m-5'>Admin Dashboard</h3>
                     </div>
                     {sideNavCollapse ? (
                         menuContent
