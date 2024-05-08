@@ -109,4 +109,46 @@ export const protectedRoutes = [
         ),
         authority: [],
     },
+    {
+        key: 'expiredProducts.item1',
+        path: '/expired-products/vehicle',
+        component: lazy(
+            () => import('@/views/screens/expired-products/Vehicle'),
+        ),
+        authority: [],
+    },
+    {
+        key: 'expiredProducts.item2',
+        path: '/expired-products/equipment',
+        component: lazy(
+            () => import('@/views/screens/expired-products/Equipment'),
+        ),
+        authority: [],
+    },
+    {
+        key: 'expiredProducts.item3',
+        path: '/expired-products/used-autoparts',
+        component: lazy(
+            () => import('@/views/screens/expired-products/UsedAutoparts'),
+        ),
+        authority: [],
+    },
+    {
+        key: 'soldout.item1',
+        path: '/soldout/vehicle',
+        component: lazy(() => import('@/views/screens/soldout/Vehicle')),
+        authority: [],
+    },
+    {
+        key: 'soldout.item2',
+        path: '/soldout/equipment',
+        component: lazy(() => import('@/views/screens/soldout/Equipment')),
+        authority: [],
+    },
+    {
+        key: 'soldout.item3',
+        path: '/soldout/used-autoparts',
+        component: lazy(() => import('@/views/screens/soldout/UsedAutoparts')),
+        authority: [],
+    },
 ]
